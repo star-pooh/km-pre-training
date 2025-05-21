@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: training
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/training
+    username: root
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  servlet:
+    session:
+      timeout: 1800
+      cookie:
+        http-only: true
+        secure: false
